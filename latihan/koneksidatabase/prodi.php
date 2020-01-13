@@ -54,6 +54,9 @@ $rs = $dbh->query($sql);
             echo '<th scope="row">' . $nomor . '</th>';
             echo '<td>' . $row['kode'] . '</td>';
             echo '<td>' . $row['nama'] . '</td>';
+            echo '<td> <a href="view_peserta.php?no=' . $row['nama'] . '" class="badge badge-success">View</a> 
+                        <a href="#" class="badge badge-primary">Update</a>
+                        <a href="#" class="badge badge-danger">Delete</a> </td>';
             echo '</tr>';
             $nomor++;
         }
